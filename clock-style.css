@@ -1,0 +1,11 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); min-height: 100vh; display: flex; justify-content: center; align-items: center; font-family: 'Arial', sans-serif; }
+.container { text-align: center; background: rgba(255, 255, 255, 0.1); padding: 40px; border-radius: 20px; box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2); backdrop-filter: blur(10px); }
+h1 { color: white; font-size: 3em; margin-bottom: 40px; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); }
+.clocks-wrapper { display: flex; gap: 40px; justify-content: center; flex-wrap: wrap; }
+.clock { background: rgba(255, 255, 255, 0.15); padding: 30px; border-radius: 15px; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); min-width: 250px; border: 2px solid rgba(255, 255, 255, 0.3); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+.clock:hover { transform: translateY(-10px); box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3); }
+.clock h2 { color: white; font-size: 1.8em; margin-bottom: 10px; }
+.timezone { color: #e0e0e0; font-size: 0.9em; margin-bottom: 20px; }
+.time { font-size: 3.5em; font-weight: bold; color: #fff; font-family: 'Courier New', monospace; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); letter-spacing: 2px; padding: 20px; background: rgba(0, 0, 0, 0.1); border-radius: 10px; margin-top: 15px; }
+@media (max-width: 768px) { .container { padding: 20px; } h1 { font-size: 2em; margin-bottom: 30px; } .clocks-wrapper { gap: 20px; } .clock { min-width: 200px; padding: 20px; } .clock h2 { font-size: 1.4em; } .time { font-size: 2.5em; } }
